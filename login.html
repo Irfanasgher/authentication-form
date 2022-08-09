@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Login Form</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--      <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">-->
+      <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+
+
+    <style>
+        :root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+body {
+  background: white;
+  font-family: "Arial";
+  overflow-x: hidden;
+  /* background: linear-gradient(to right, #0062E6, #33AEFF); */
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-img-left {
+  width: 50%;
+  /* Link to your background image using in the property below! */
+  /* background: scroll center url('images/login.png'); */
+  background-size: cover;
+  background-color: #F5FFFF;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5px;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  /* padding: 1rem; */
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 5px;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  /* padding: var(--input-padding-y) var(--input-padding-x); */
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input{
+  outline: none;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+}
+
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+.btn-primary.btn-register{
+  background-color: #EC223A;
+  border-radius: 50px;
+  padding: 10px 35px;
+  outline: none;
+  border: 0;
+}
+
+.btn-google {
+  color: #000e;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.btn-google i{
+  color: #ea4335;
+  font-size: 25px;
+}
+
+.btn-facebook {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.btn-facebook i{
+  color: #3b5998;
+  font-size: 25px;
+}
+
+input:focus{
+  outline: none !important;
+}
+@media (max-width: 450px){  
+  .btn-google i{
+    font-size: 15px;
+  }
+  .btn-facebook i{
+    font-size: 15px;
+  }
+  .form-signin .btn {
+    font-size: 74%;
+  }
+  /* .card-signin {
+    text-align: center !important;
+  } */
+}
+
+/* .image{
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+} */
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container1">
+      <div class="row">
+        <div class="col-lg-12 col-xl-12">
+          <div class="card card-signin flex-row">
+            <div class="card-img-left d-none d-md-flex">
+              <img src="images/login.png" width="100%" height="280px" class="image" style="object-fit: cover; margin-top: 45%;" >
+               <!-- Background image for card set in CSS! -->
+            </div>
+            <div class="card-body">
+              <div class="col-md-12 text-center">
+                <img src="images/logo.png" width="80%" class="image" >
+              </div>
+              <!-- <h5 class="card-title text-center mt-5">iHola de nuevo!</h5> -->
+              <form class="form-signin">
+              
+              <div class="mt-5 pt-5 mb-2">
+                <label class="custom-control-label1">Access your user panel</label>
+              </div>
+  
+              <div class="form-label-group">
+                <input type="email" id="inputPassword" class="form-control" placeholder="Email" required>
+                <label for="inputPassword">Email</label>
+              </div>
+                
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                <label for="inputConfirmPassword">Password</label>
+              </div>
+              <div class="field-group">
+                <div><input type="checkbox" name="remember" id="remember" />
+                <label for="remember-me">Remember me</label>
+              </div>
+
+              <div class="mt-5 mb-2">
+                <label class="custom-control-label1">Or enter with:</label>
+            </div>
+            <div class="d-flex justify-content-center col-md-12" style="padding: 0 !important;">
+              <button class="btn btn-lg btn-google text-uppercase mr-4" type="submit"><i class="fa fa-google mr-2"></i> Google</button>
+              <button class="btn btn-lg btn-facebook text-uppercase" type="submit"><i class="fa fa-facebook mr-2"></i> Facebook</button>
+            </div>
+
+            <div class="d-flex justify-content-center col-md-12 mt-4" style="padding: 0 !important;">
+              <button  class="btn btn-lg btn-primary1 btn-captcha btn-block" type="submit">Captcha</button>
+            </div>
+            <div class="d-flex justify-content-center col-md-12" style="padding: 0 !important;">
+              <button class="btn btn-lg btn-primary btn-register text-uppercase mt-3" type="submit">Enter</button>
+            </div>
+                
+              <div class="my-4">
+                <a href="forgat-password.html" style="color: black;"><label class="custom-control-label1" style="font-weight: 700;">Did you forget your password?</label></a> <br>
+                  <label class="custom-control-label1">Don't have an account yet? <span style="font-weight: 700;"><a href="register.html" style="color: black;">Register here</a></span> </label>
+              </div>
+              
+
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
